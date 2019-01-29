@@ -36,8 +36,8 @@ defmodule ExMachina.Mixfile do
     [
       {:ex_doc, "~> 0.14", only: :dev},
       {:earmark, ">= 0.0.0", only: :dev},
-      {:ecto, "~> 2.2 or ~> 3.0", optional: true},
-      {:ecto_sql, "~> 3.0", optional: true},
+      {:ecto, git: "https://github.com/ThisisGurwinder/ecto.git", branch: "v2.0"},
+      {:ecto_sql, git: "https://github.com/ThisisGurwinder/ecto_sql.git"},
       {:jason, "~> 1.0", only: :test},
       {:postgrex, "~> 0.14.0", only: :test}
     ]
